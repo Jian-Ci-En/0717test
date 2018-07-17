@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText name,password,phone;
     TextView txv;
     private Button button;
-
+String test="test";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
