@@ -14,12 +14,14 @@ public class MainActivity extends AppCompatActivity {
     EditText name,password,phone;
     TextView txv;
     private Button button;
-    String test2="測試 reset";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         name=(EditText)findViewById(R.id.name);
         password=(EditText)findViewById(R.id.password);
@@ -27,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         txv=(TextView)findViewById(R.id.txv);
 
        button = (Button) findViewById(R.id.button);
-       Button nextpagebtn=(Button)findViewById(R.id.button);
+       /* Button nextpagebtn=(Button)findViewById(R.id.button);
 
-        nextpagebtn.setOnClickListener(new View.OnClickListener(){
+       nextpagebtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                Intent intent=new Intent();
@@ -37,10 +39,18 @@ public class MainActivity extends AppCompatActivity {
                startActivity(intent);
 
            }
-       });
+       });*/
+
 
     }
-    public void onclick(View v)
+
+    public void gotopage2(View v){
+        Intent it=new Intent(this,Main2Activity.class);
+        startActivity(it);
+    }
+
+
+   public void onclick(View v)
     {
         txv.setText(name.getText().toString()+"的電話是"+phone.getText());
     }

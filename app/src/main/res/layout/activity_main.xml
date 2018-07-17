@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="姓名" />
+            android:text="@string/nam" />
 
         <EditText
             android:id="@+id/name"
@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="密碼" />
+            android:text="@string/key" />
 
         <EditText
             android:id="@+id/password"
@@ -64,7 +64,7 @@
             android:layout_width="102dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="電話" />
+            android:text="@string/phonename" />
 
         <EditText
             android:id="@+id/phone"
@@ -81,14 +81,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onclick"
-        android:text="確定"
+        android:text="@string/surebtn"
         tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="next page" />
+        android:text="@string/nextpage" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotopage2"
+        android:text="trypage2" />
 
     <TextView
         android:id="@+id/txv"
