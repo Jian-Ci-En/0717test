@@ -28,7 +28,7 @@ String test="test";
         phone=(EditText)findViewById(R.id.phone);
         txv=(TextView)findViewById(R.id.txv);
 
-       button = (Button) findViewById(R.id.button);
+       button = (Button) findViewById(R.id.button3);
        /* Button nextpagebtn=(Button)findViewById(R.id.button);
 
        nextpagebtn.setOnClickListener(new View.OnClickListener(){
@@ -52,6 +52,8 @@ String test="test";
 
    public void onclick(View v)
     {
+        Intent it=new Intent(this,Main3Activity.class);
+        startActivity(it);
         txv.setText(name.getText().toString()+"的電話是"+phone.getText());
     }
 }

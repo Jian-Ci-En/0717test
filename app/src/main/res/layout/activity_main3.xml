@@ -74,4 +74,14 @@
         android:text="搜尋銘傳"
         app:layout_constraintStart_toEndOf="@+id/buttonGps"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goAlert"
+        android:text="彈跳視窗"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="328dp" />
 </android.support.constraint.ConstraintLayout>
